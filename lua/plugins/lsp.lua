@@ -14,20 +14,12 @@ return {
         vim.keymap.set("n", "K", vim.lsp.buf.hover, { buffer = 0 })
         vim.keymap.set("n", "<space>rf", vim.lsp.buf.rename, { buffer = 0 })
         vim.keymap.set("n", "<space>ca", vim.lsp.buf.code_action, { buffer = 0 })
-
-        -- local filetype = vim.bo[bufnr].filetype
-        -- if disable_semantic_tokens[filetype] then
-        --   client.server_capabilities.semanticTokensProvider = nil
-        -- end
       end,
     })
 
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
-
     local lspconfig = require('lspconfig')
-
-    -- Enable some language servers with the additional completion capabilities offered by nvim-cmp
-    local servers = {'basedpyright', 'ruff'}
+    local servers = {'basedpyright', 'ruff', 'ts_ls', 'svelte'}
     for _, lsp in ipairs(servers) do
       lspconfig[lsp].setup {
         -- on_attach = my_custom_on_attach,
