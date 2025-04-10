@@ -14,6 +14,7 @@ return {
         vim.keymap.set("n", "K", vim.lsp.buf.hover, { buffer = 0 })
         vim.keymap.set("n", "<space>rf", vim.lsp.buf.rename, { buffer = 0 })
         vim.keymap.set("n", "<space>ca", vim.lsp.buf.code_action, { buffer = 0 })
+        vim.keymap.set("n", "<space>e", vim.diagnostic.open_float, { buffer = 0 })
       end,
     })
 
