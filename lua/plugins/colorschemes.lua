@@ -49,7 +49,7 @@ return {
         specs = {},
         groups = {},
       })
-      vim.cmd.colorscheme 'carbonfox'
+      vim.cmd.colorscheme 'dayfox'
     end
   } 
 }
