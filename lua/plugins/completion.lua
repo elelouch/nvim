@@ -14,5 +14,5 @@ return {
     config = function()
       require "completion"
     end,
-  },
+  }  
 }
