@@ -20,5 +20,3 @@ opt.shada = { "'10", "<0", "s10", "h" }
 opt.clipboard = "unnamedplus"
 opt.guicursor = ""
 
-opt.background = "dark"
-vim.cmd.colorscheme "wildcharm"
