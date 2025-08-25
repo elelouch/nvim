@@ -7,4 +7,10 @@ return {
       vim.cmd.colorscheme "onedark_dark"
     end
   },
+  {
+    "rebelot/kanagawa.nvim",
+    config=function()
+      -- vim.cmd.colorscheme 'kanagawa-dragon'
+    end
+  }
 }
