@@ -5,7 +5,7 @@ cmp.setup {
     { name = "nvim_lsp" },
     { name = "path" },
     { name = "buffer" },
-    { name = "cmdline" },
+    -- { name = "cmdline" },
   },
   mapping = {
     ["<C-n>"] = cmp.mapping.select_next_item { behavior = cmp.SelectBehavior.Insert },
@@ -20,18 +20,18 @@ cmp.setup {
   }
 }
 
-cmp.setup.cmdline({ '/', '?' }, {
-  mapping = cmp.mapping.preset.cmdline(),
-  sources = {
-    { name = 'buffer' }
-  }
-})
-cmp.setup.cmdline(':', {
-  mapping = cmp.mapping.preset.cmdline(),
-  sources = cmp.config.sources({
-    { name = 'path' }
-  }, {
-    { name = 'cmdline' }
-  }),
-  matching = { disallow_symbol_nonprefix_matching = false }
-})
+-- cmp.setup.cmdline({ '/', '?' }, {
+--   mapping = cmp.mapping.preset.cmdline(),
+--   sources = {
+--     { name = 'buffer' }
+--   }
+-- })
+-- cmp.setup.cmdline(':', {
+--   mapping = cmp.mapping.preset.cmdline(),
+--   sources = cmp.config.sources({
+--     { name = 'path' }
+--   }, {
+--     { name = 'cmdline' }
+--   }),
+--   matching = { disallow_symbol_nonprefix_matching = false }
+-- })

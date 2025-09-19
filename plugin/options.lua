@@ -20,3 +20,5 @@ opt.shada = { "'10", "<0", "s10", "h" }
 opt.clipboard = "unnamedplus"
 opt.guicursor = ""
 
+--- aliases
+vim.env.BASH_ENV="~/.bash_aliases"
