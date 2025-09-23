@@ -19,13 +19,12 @@ return {
     })
 
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
-    local lspconfig = require('lspconfig')
     local servers = {'basedpyright', 'ruff', 'ts_ls', 'svelte'}
     for _, lsp in ipairs(servers) do
-      lspconfig[lsp].setup {
-        -- on_attach = my_custom_on_attach,
-        capabilities = capabilities,
-      }
+	vim.lsp.config(lsp, {
+		capabilitites = capabilitites
+	})
     end
+	vim.lsp.enable(servers)
   end
 }
